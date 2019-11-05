@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clean Code Example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h2>Clean Code Example</h2>
+      <h3>Sandra Tieben</h3>
+    </header>
+
+    <main>
+      <h1>TIC TAC TOE</h1>
+      <table class="board">
+        <tr>
+          <td>
+            <div id="0" class="square left top"></div>
+          </td>
+          <td>
+            <div id="1" class="square top v-middle"></div>
+          </td>
+          <td>
+            <div id="2" class="square right top"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="3" class="square left h-middle"></div>
+          </td>
+          <td>
+            <div id="4" class="square v-middle h-middle"></div>
+          </td>
+          <td>
+            <div id="5" class="square right h-middle"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="6" class="square left bottom"></div>
+          </td>
+          <td>
+            <div id="7" class="square bottom v-middle"></div>
+          </td>
+          <td>
+            <div id="8" class="square right bottom"></div>
+          </td>
+        </tr>
+      </table>
+
+      <section id="info">
+        <p id="messageBox">Wähle zum Starten ein Feld aus!</p>
+        <button class="button" onclick="resetGame()">Neues Spiel</button>
+      </section>
+    </main>
+  </body>
+  <script src="test.js"></script>
+</html>

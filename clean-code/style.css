@@ -1,0 +1,127 @@
+html {
+  --text-color: rgb(255, 210, 64);
+  --button-hover: rgb(255, 199, 14);
+}
+
+body {
+  text-align: center;
+  background: rgba(120, 120, 120, 1);
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(120, 120, 120, 1) 0%,
+    rgba(5, 5, 5, 1) 100%
+  );
+  background: -webkit-gradient(
+    radial,
+    center center,
+    0px,
+    center center,
+    100%,
+    color-stop(0%, rgba(120, 120, 120, 1)),
+    color-stop(100%, rgba(5, 5, 5, 1))
+  );
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(120, 120, 120, 1) 0%,
+    rgba(5, 5, 5, 1) 100%
+  );
+  background: -o-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(120, 120, 120, 1) 0%,
+    rgba(5, 5, 5, 1) 100%
+  );
+  background: -ms-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(120, 120, 120, 1) 0%,
+    rgba(5, 5, 5, 1) 100%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(120, 120, 120, 1) 0%,
+    rgba(5, 5, 5, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#787878', endColorstr='#050505', GradientType=1 );
+}
+
+main {
+  max-width: 32rem;
+  padding: 2rem;
+  margin: auto;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-color);
+}
+
+#messageBox {
+  line-height: 2;
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  border-radius: 10px;
+}
+
+.square {
+  display: inline-block;
+  width: 10em;
+  height: 75px;
+  line-height: 75px;
+  color: var(--text-color);
+}
+
+.left {
+  border-right: 1px solid var(--text-color);
+}
+
+.right {
+  border-left: 7px solid var(--text-color);
+}
+
+.top {
+  border-bottom: 1px solid var(--text-color);
+}
+
+.bottom {
+  border-top: 7px solid var(--text-color);
+}
+
+.v-middle {
+  border-right: 1px solid var(--text-color);
+  border-left: 7px solid var(--text-color);
+}
+
+.h-middle {
+  border-top: 7px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #666;
+  background-color: var(--text-color);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(110, 110, 110);
+}
+
+.button:hover {
+  background-color: var(--button-hover);
+}
+
+.button:active {
+  background-color: var(--button-hover);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
